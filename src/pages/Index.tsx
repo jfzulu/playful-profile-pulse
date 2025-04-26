@@ -1,21 +1,24 @@
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Timeline from "@/components/Timeline";
 import ProjectCard from "@/components/ProjectCard";
+import Skills from "@/components/Skills";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 const educationItems = [
   {
     title: "Universidad Example",
     date: "2018 - 2022",
     description: "Ingeniería en Informática",
-    type: "education"
+    type: "education" as const
   },
   {
     title: "Bootcamp de Desarrollo Web",
     date: "2022",
     description: "Especialización en desarrollo web full-stack",
-    type: "education"
+    type: "education" as const
   }
 ];
 
@@ -24,13 +27,13 @@ const experienceItems = [
     title: "Desarrollador Full Stack",
     date: "2022 - Presente",
     description: "Desarrollo de aplicaciones web utilizando React y Node.js",
-    type: "experience"
+    type: "experience" as const
   },
   {
     title: "Desarrollador Frontend",
     date: "2021 - 2022",
     description: "Desarrollo de interfaces de usuario con React y TypeScript",
-    type: "experience"
+    type: "experience" as const
   }
 ];
 
@@ -58,7 +61,22 @@ const Index = () => {
     <div className="bg-gradient-to-br from-white to-gray-50">
       <Navbar />
       <Hero />
+      <ScrollIndicator />
       
+      <section id="about" className="py-20">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Acerca de mí</h2>
+          <About />
+        </div>
+      </section>
+
+      <section id="skills" className="py-20 bg-white/50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Habilidades</h2>
+          <Skills />
+        </div>
+      </section>
+
       <section id="education" className="py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary mb-10 text-center">Educación</h2>
@@ -81,6 +99,13 @@ const Index = () => {
               <ProjectCard key={index} {...project} />
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-20 bg-white/50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Contacto</h2>
+          <Contact />
         </div>
       </section>
     </div>

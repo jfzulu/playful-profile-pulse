@@ -30,6 +30,22 @@ const Navbar = () => {
             </Button>
             <Button
               variant="ghost"
+              className={`flex items-center gap-2 ${activeSection === 'about' ? 'text-primary' : ''}`}
+              onClick={() => scrollToSection('about')}
+            >
+              <FileText size={20} />
+              <span className="hidden md:inline">Acerca de mí</span>
+            </Button>
+            <Button
+              variant="ghost"
+              className={`flex items-center gap-2 ${activeSection === 'skills' ? 'text-primary' : ''}`}
+              onClick={() => scrollToSection('skills')}
+            >
+              <Book size={20} />
+              <span className="hidden md:inline">Habilidades</span>
+            </Button>
+            <Button
+              variant="ghost"
               className={`flex items-center gap-2 ${activeSection === 'education' ? 'text-primary' : ''}`}
               onClick={() => scrollToSection('education')}
             >
@@ -51,6 +67,14 @@ const Navbar = () => {
             >
               <Code size={20} />
               <span className="hidden md:inline">Proyectos</span>
+            </Button>
+            <Button
+              variant="ghost"
+              className={`flex items-center gap-2 ${activeSection === 'contact' ? 'text-primary' : ''}`}
+              onClick={() => scrollToSection('contact')}
+            >
+              <Mail size={20} />
+              <span className="hidden md:inline">Contacto</span>
             </Button>
           </div>
         </div>
