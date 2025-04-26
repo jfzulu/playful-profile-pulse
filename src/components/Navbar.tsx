@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { FileText, Book, Briefcase, Code } from 'lucide-react';
+import { FileText, Book, Briefcase, Code, Mail } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
