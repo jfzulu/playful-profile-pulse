@@ -58,8 +58,8 @@ const projects = [
     title: "Gestión de farmacia",
     description: "Aplicación para la gestión de inventario y ventas de una farmacia",
     technologies: ["React", "Node.js", "Html", "CSS"],
-    githubUrl: "",
-    liveUrl:"",
+    githubUrl: "https://github.com/jfzulu/portfolio-jfzulu",
+    liveUrl:"https://portfolio-jfzulu.vercel.app/",
     imageUrl: "/DrogueriaProject.PNG"
   }
 ];

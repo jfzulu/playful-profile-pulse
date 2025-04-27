@@ -1,4 +1,3 @@
-
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
@@ -48,16 +47,20 @@ const ProjectCard = ({
         </div>
         <div className="flex gap-2">
           {githubUrl && (
-            <Button variant="outline" size="sm" className="flex items-center gap-2">
-              <Github size={16} />
-              GitHub
-            </Button>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="sm" className="flex items-center gap-2">
+                <Github size={16} />
+                GitHub
+              </Button>
+            </a>
           )}
           {liveUrl && (
-            <Button size="sm" className="flex items-center gap-2">
-              <Link size={16} />
-              Demo
-            </Button>
+            <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+              <Button size="sm" className="flex items-center gap-2">
+                <Link size={16} />
+                Demo
+              </Button>
+            </a>
           )}
         </div>
       </CardContent>
