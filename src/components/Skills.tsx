@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 
 const skills = [
@@ -18,19 +17,24 @@ const skills = [
     level: "Avanzado"
   },
   {
-    name: "React",
-    description: "Desarrollo de interfaces de usuario modernas y responsivas",
+    name: "Excel",
+    description: "Análisis de datos, automatización y visualización con fórmulas avanzadas y VBA",
     level: "Avanzado"
   },
   {
-    name: "Node.js",
-    description: "Construcción de APIs RESTful y servicios backend",
+    name: "JavaScript",
+    description: "Desarrollo web frontend y backend, aplicaciones interactivas y dinámicas",
     level: "Intermedio"
   },
   {
-    name: "TypeScript",
-    description: "Desarrollo frontend y backend con tipado estático",
+    name: "C++",
+    description: "Desarrollo de sistemas y aplicaciones de alto rendimiento",
     level: "Intermedio"
+  },
+  {
+    name: "Inglés",
+    description: "Comunicación fluida, comprensión de textos técnicos y presentaciones profesionales",
+    level: "B2-C1"
   }
 ];
 
@@ -43,7 +47,7 @@ const Skills = () => {
           className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
         >
           <h3 className="text-xl font-semibold mb-2 text-primary">{skill.name}</h3>
-          <p className="text-gray-600 mb-2">{skill.description}</p>
+          <p className="text-foreground/80 mb-2">{skill.description}</p>
           <span className="text-sm font-medium text-primary/80">
             Nivel: {skill.level}
           </span>

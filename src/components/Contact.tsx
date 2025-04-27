@@ -1,14 +1,27 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Github,
   Linkedin,
-  Mail
+  Mail,
+  Check
 } from "lucide-react";
+import { toast } from "sonner";
 
 const Contact = () => {
-  const [showEmail, setShowEmail] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const email = "jfzulu.dev@gmail.com";
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopied(true);
+      toast.success("Correo copiado al portapapeles");
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      toast.error("No se pudo copiar el correo");
+    }
+  };
 
   return (
     <div className="flex flex-col items-center gap-6">
@@ -16,10 +29,16 @@ const Contact = () => {
         <Button
           variant="outline"
           size="icon"
-          className="rounded-full"
-          onClick={() => setShowEmail(!showEmail)}
+          className="rounded-full relative group"
+          onClick={copyToClipboard}
+          asChild
         >
-          <Mail className="w-5 h-5" />
+          <a href={`mailto:${email}`} onClick={(e) => {
+            e.preventDefault();
+            copyToClipboard();
+          }}>
+            {copied ? <Check className="w-5 h-5 text-green-500" /> : <Mail className="w-5 h-5" />}
+          </a>
         </Button>
         <Button
           variant="outline"
@@ -27,7 +46,7 @@ const Contact = () => {
           className="rounded-full"
           asChild
         >
-          <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/jfzulu/" target="_blank" rel="noopener noreferrer">
             <Linkedin className="w-5 h-5" />
           </a>
         </Button>
@@ -37,16 +56,11 @@ const Contact = () => {
           className="rounded-full"
           asChild
         >
-          <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/jfzulu" target="_blank" rel="noopener noreferrer">
             <Github className="w-5 h-5" />
           </a>
         </Button>
       </div>
-      {showEmail && (
-        <div className="animate-fade-in">
-          <p className="text-gray-600">tucorreo@example.com</p>
-        </div>
-      )}
     </div>
   );
 };

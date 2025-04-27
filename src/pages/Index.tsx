@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import ScrollIndicator from "@/components/ScrollIndicator";
+import MatrixBackground from "@/components/MatrixBackground";
 
 const educationItems = [
   {
@@ -58,56 +58,58 @@ const projects = [
 
 const Index = () => {
   return (
-    <div className="bg-gradient-to-br from-white to-gray-50">
-      <Navbar />
-      <Hero />
-      <ScrollIndicator />
-      
-      <section id="about" className="py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Acerca de mí</h2>
-          <About />
-        </div>
-      </section>
-
-      <section id="skills" className="py-20 bg-white/50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Habilidades</h2>
-          <Skills />
-        </div>
-      </section>
-
-      <section id="education" className="py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Educación</h2>
-          <Timeline items={educationItems} />
-        </div>
-      </section>
-
-      <section id="experience" className="py-20 bg-white/50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Experiencia</h2>
-          <Timeline items={experienceItems} />
-        </div>
-      </section>
-
-      <section id="projects" className="py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Proyectos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} {...project} />
-            ))}
+    <div className="relative bg-background">
+      <MatrixBackground />
+      <div className="relative z-10">
+        <Navbar />
+        <Hero />
+        
+        <section id="about" className="py-20">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-primary mb-10 text-center">Acerca de mí</h2>
+            <About />
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="contact" className="py-20 bg-white/50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Contacto</h2>
-          <Contact />
-        </div>
-      </section>
+        <section id="skills" className="py-20 bg-muted/50">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-primary mb-10 text-center">Habilidades</h2>
+            <Skills />
+          </div>
+        </section>
+
+        <section id="education" className="py-20">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-primary mb-10 text-center">Educación</h2>
+            <Timeline items={educationItems} />
+          </div>
+        </section>
+
+        <section id="experience" className="py-20 bg-muted/50">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-primary mb-10 text-center">Experiencia</h2>
+            <Timeline items={experienceItems} />
+          </div>
+        </section>
+
+        <section id="projects" className="py-20">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-primary mb-10 text-center">Proyectos</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {projects.map((project, index) => (
+                <ProjectCard key={index} {...project} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="py-20 bg-muted/50">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-primary mb-10 text-center">Contacto</h2>
+            <Contact />
+          </div>
+        </section>
+      </div>
     </div>
   );
 };
