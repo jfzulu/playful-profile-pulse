@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# Playful Profile Pulse
 
-## Project info
+Playful Profile Pulse es una aplicación web interactiva y moderna diseñada para mostrar un portafolio personal. Este proyecto utiliza tecnologías modernas como React, TypeScript y Tailwind CSS para ofrecer una experiencia de usuario atractiva y eficiente.
 
-**URL**: https://lovable.dev/projects/cb5939a6-0687-4cc7-9422-8e75f06cffef
+## Características
 
-## How can I edit this code?
+- **Sección de Proyectos**: Muestra proyectos destacados con imágenes, descripciones y enlaces.
+- **Sección de Habilidades**: Lista de habilidades técnicas organizadas de manera visual.
+- **Sección de Educación y Experiencia**: Línea de tiempo interactiva para mostrar logros académicos y experiencia laboral.
+- **Diseño Responsivo**: Optimizado para dispositivos móviles y de escritorio.
+- **Estilo Moderno**: Utiliza Tailwind CSS para un diseño limpio y profesional.
 
-There are several ways of editing your application.
+## Tecnologías Utilizadas
 
-**Use Lovable**
+- **React**: Biblioteca para construir interfaces de usuario.
+- **TypeScript**: Superset de JavaScript para tipado estático.
+- **Vite**: Herramienta de desarrollo rápida y moderna.
+- **Tailwind CSS**: Framework de CSS para estilos rápidos y consistentes.
+- **ESLint**: Herramienta para mantener la calidad del código.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cb5939a6-0687-4cc7-9422-8e75f06cffef) and start prompting.
+## Instalación
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clona este repositorio:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   ```
 
-**Use your preferred IDE**
+2. Navega al directorio del proyecto:
+   ```bash
+   cd playful-profile-pulse
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-Follow these steps:
+5. Abre tu navegador en `http://localhost:3000` para ver la aplicación.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Estructura del Proyecto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **public/**: Archivos estáticos como imágenes y documentos.
+- **src/**: Código fuente principal.
+  - **components/**: Componentes reutilizables de la interfaz de usuario.
+  - **hooks/**: Hooks personalizados para lógica específica.
+  - **pages/**: Páginas principales de la aplicación.
+  - **lib/**: Utilidades y funciones auxiliares.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Scripts Disponibles
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- `npm run dev`: Inicia el servidor de desarrollo.
+- `npm run build`: Construye la aplicación para producción.
+- `npm run preview`: Previsualiza la aplicación construida.
+- `npm run lint`: Ejecuta ESLint para analizar el código.
 
-**Edit a file directly in GitHub**
+## Contribución
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
-**Use GitHub Codespaces**
+1. Haz un fork del repositorio.
+2. Crea una rama para tu funcionalidad o corrección de errores:
+   ```bash
+   git checkout -b mi-nueva-funcionalidad
+   ```
+3. Realiza tus cambios y haz un commit:
+   ```bash
+   git commit -m "Agrega nueva funcionalidad"
+   ```
+4. Envía tus cambios al repositorio remoto:
+   ```bash
+   git push origin mi-nueva-funcionalidad
+   ```
+5. Abre un Pull Request.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Licencia
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/cb5939a6-0687-4cc7-9422-8e75f06cffef) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.

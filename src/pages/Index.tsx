@@ -9,15 +9,15 @@ import MatrixBackground from "@/components/MatrixBackground";
 
 const educationItems = [
   {
-    title: "Universidad Example",
-    date: "2018 - 2022",
-    description: "Ingeniería en Informática",
+    title: "Universidad Pontificia Javeriana",
+    date: "2019 - 2025",
+    description: "Pregrado en Ingeniería de Sistemas",
     type: "education" as const
   },
   {
-    title: "Bootcamp de Desarrollo Web",
-    date: "2022",
-    description: "Especialización en desarrollo web full-stack",
+    title: "Wall Street English",
+    date: "2017",
+    description: "Estudio en Inglés",
     type: "education" as const
   }
 ];
@@ -25,14 +25,14 @@ const educationItems = [
 const experienceItems = [
   {
     title: "Desarrollador Full Stack",
-    date: "2022 - Presente",
-    description: "Desarrollo de aplicaciones web utilizando React y Node.js",
+    date: "2022 - 2023",
+    description: "Desarrollo de aplicaciones personalizadas con Spring Boot y React",
     type: "experience" as const
   },
   {
-    title: "Desarrollador Frontend",
-    date: "2021 - 2022",
-    description: "Desarrollo de interfaces de usuario con React y TypeScript",
+    title: "Analista de negocio & Scrummaster",
+    date: "2022",
+    description: "Gestión de proyectos y análisis de requerimientos",
     type: "experience" as const
   }
 ];
@@ -53,6 +53,14 @@ const projects = [
     githubUrl: "#",
     liveUrl: "#",
     imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+  },
+  {
+    title: "Gestión de farmacia",
+    description: "Aplicación para la gestión de inventario y ventas de una farmacia",
+    technologies: ["React", "Node.js", "Html", "CSS"],
+    githubUrl: "",
+    liveUrl:"",
+    imageUrl: "/DrogueriaProject.PNG"
   }
 ];
 
