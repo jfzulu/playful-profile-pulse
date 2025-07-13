@@ -51,13 +51,37 @@ const About = () => {
         </div>
       </div>
       <div className="flex-1 space-y-4">
-        <p className="text-lg text-foreground/90 leading-relaxed animate-fade-in text-justify">
-          Ingeniero de Sistemas de la Pontificia Universidad Javeriana, con énfasis en desarrollo de software. Apasionado por el diseño e implementación de tecnológicas innovadoras. Mi formación académica me ha permitido adquirir sólidos conocimientos en desarrollo de software, comunicaciones y análisis de negocio. Me destaco por mí análisis de problemas y personas, permitiéndome una comunicación asertiva, trabajo en equipo y soluciones eficientes. Interesado en ampliar mi camino profesional de forma más exigente, mediante las experiencias que me aporten un crecimiento laboral, nuevo conocimiento técnico y avance en mi proyecto de vida. Amante de los retos y desafíos, con una alta adaptabilidad a entornos, personas y actividades, siendo proactivo y autodidacta generando una disposición abierta al aprendizaje. Experiencia utilizando tecnologías como Git, SQL, Python, Java, C++, JavaScript.
-        </p>
-        <p className="text-lg text-foreground/90 leading-relaxed animate-fade-in delay-200">
-          Mi objetivo es combinar mi conocimiento técnico con mi creatividad para desarrollar 
-          soluciones que impacten positivamente en la vida de los usuarios.
-        </p>
+        <div className="space-y-2 animate-fade-in">
+          <p className="text-lg text-foreground/90 leading-relaxed text-justify">
+            Ingeniero de Sistemas (Pontificia Universidad Javeriana) con especialización en desarrollo de software y pasión por la innovación tecnológica. Combino sólidos conocimientos técnicos en backend, análisis de datos y arquitectura de software con habilidades de comunicación y resolución de problemas para crear soluciones eficientes y centradas en el usuario.
+          </p>
+          <div className="space-y-1">
+            <h3 className="text-lg font-semibold text-primary flex items-center gap-2 mt-2">🔹 Mis fortalezas:</h3>
+            <ul className="list-disc list-inside ml-4 space-y-1">
+              <li>
+                <span className="font-semibold">Experiencia técnica:</span> Desarrollo con Python, Java, JavaScript, SQL y C++, manejo de versiones (Git) y diseño de sistemas escalables.
+              </li>
+              <li>
+                <span className="font-semibold">Enfoque analítico:</span> Capacidad para traducir necesidades de negocio en soluciones técnicas robustas, con experiencia en análisis de datos y optimización de procesos.
+              </li>
+              <li>
+                <span className="font-semibold">Habilidades colaborativas:</span> Trabajo en equipo efectivo, adaptabilidad a entornos dinámicos y comunicación asertiva con equipos multidisciplinarios.
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-1">
+            <h3 className="text-lg font-semibold text-primary flex items-center gap-2 mt-2">🔹 Lo que me define:</h3>
+            <p className="text-foreground/90 text-justify">
+              Soy un profesional proactivo y autodidacta, con mentalidad de crecimiento y pasión por los retos que impulsen mi desarrollo. Mi objetivo es integrar creatividad y tecnología para construir productos que generen impacto real, siempre con foco en la experiencia del usuario.
+            </p>
+          </div>
+          <div className="space-y-1">
+            <h3 className="text-lg font-semibold text-primary flex items-center gap-2 mt-2">🔹 Busco:</h3>
+            <p className="text-foreground/90 text-justify">
+              Oportunidades desafiantes en desarrollo backend, ciencia de datos o full-stack, donde pueda aportar mi expertise técnico y seguir creciendo en un entorno innovador.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
