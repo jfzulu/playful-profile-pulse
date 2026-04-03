@@ -40,10 +40,10 @@ const experienceItems = [
 const projects = [
   {
     title: "Library System",
-    description: "Sistema de gestión para libreria (libros, prestamos, usuarios)",
+    description: "Sistema de gestión para libreria (libros, prestamos, usuarios). Relations one-to-many & many-to-many",
     technologies: ["SpringBoot", "MySQL", "HTML"],
     githubUrl: "https://github.com/jfzulu/library.git",
-    liveUrl: "#",
+    liveUrl: "https://github.com/jfzulu/library.git",
     imageUrl: "/pictureSystem.png"
   },
   {
