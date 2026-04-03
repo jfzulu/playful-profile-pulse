@@ -10,7 +10,7 @@ import { toast } from "sonner";
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
-  const email = "jfzulu.dev@gmail.com";
+  const email = "josferzul@gmail.com";
 
   const copyToClipboard = async () => {
     try {
