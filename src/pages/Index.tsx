@@ -39,12 +39,12 @@ const experienceItems = [
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "Plataforma de comercio electrónico con React y Node.js",
-    technologies: ["React", "Node.js", "MongoDB", "TypeScript"],
-    githubUrl: "#",
+    title: "Library System",
+    description: "Sistema de gestión para libreria (libros, prestamos, usuarios)",
+    technologies: ["SpringBoot", "MySQL", "HTML"],
+    githubUrl: "https://github.com/jfzulu/library.git",
     liveUrl: "#",
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+    imageUrl: "/pictureSystem.png"
   },
   {
     title: "Task Management App",
@@ -59,7 +59,7 @@ const projects = [
     description: "Aplicación para la gestión de inventario y ventas de una farmacia",
     technologies: ["React", "Node.js", "Html", "CSS"],
     githubUrl: "https://github.com/jfzulu/portfolio-jfzulu",
-    liveUrl:"https://portfolio-jfzulu.vercel.app/",
+    liveUrl: "https://portfolio-jfzulu.vercel.app/",
     imageUrl: "/DrogueriaProject.PNG"
   }
 ];
@@ -71,7 +71,7 @@ const Index = () => {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-        
+
         <section id="about" className="py-20">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-primary mb-10 text-center">Acerca de mí</h2>
